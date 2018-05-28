@@ -6,6 +6,6 @@ def call(body){
     body.delegate = config
     body()
 
-    JsonObject jsonObj = JsonUtil.loadJson(config.jsonData)
+    def jsonObj = JsonUtil.loadJson(config.jsonData)
     return jsonObj
 }
